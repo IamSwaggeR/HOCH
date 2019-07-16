@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/appColorGreen"
+        android:gravity="center_horizontal"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_menu_button_of_three_horizontal_lines"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="187dp"
+        app:srcCompat="@drawable/app_logo" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_container"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp" />
+
+        <ImageButton
+            android:id="@+id/lefNav"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|left"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_arrowhead_thin_outline_to_the_left" />
+
+        <ImageButton
+            android:id="@+id/rightNav"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|right"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_arrow_point_to_right" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="383dp"
+        android:text="@string/category"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_search" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_shopping_cart" />
+
+    <RelativeLayout
+        android:layout_width="177dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="279dp"
+        android:background="@drawable/radious_blue">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/ic_food" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/alginTextHomePageRight"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="19dp"
+            android:text="@string/khmerFood" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="177dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginBottom="279dp"
+        android:background="@drawable/radious_red">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/ic_noodles" />
+
+        <TextView
+            android:id="@+id/chineseFood"
+            style="@style/alginTextHomePageLeft"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/chineseFood" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="177dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="174dp"
+        android:background="@drawable/radious_orange">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/ic_pizza" />
+
+        <TextView
+            android:id="@+id/europeFood"
+            style="@style/alginTextHomePageRight"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="19dp"
+            android:text="@string/europeFood" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="177dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginBottom="174dp"
+        android:background="@drawable/radious_gred">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="19dp"
+            app:srcCompat="@drawable/ic_coffee" />
+
+        <TextView
+            android:id="@+id/drink"
+            style="@style/alginTextHomePageLeft"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="33dp"
+            android:text="@string/drink" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/recommend"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="258dp"
+        android:layout_marginBottom="149dp"
+        android:text="@string/recommend"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="3400dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="0dp" />
+
+</RelativeLayout>

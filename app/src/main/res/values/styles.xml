@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="color">@color/appColorGreen</item>
+    </style>
+    <style name="textHomePage">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="alginTextHomePageLeft" parent="textHomePage">
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="alginTextHomePageRight" parent="textHomePage">
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="textSize18">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="textSize18ColorBlack" parent="textSize18">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    <style name="text48SPBlack">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    <style name="text48SP" parent="text48SPBlack">
+        <item name="android:textSize">48sp</item>
+    </style>
+    <style name="text24Sp" parent="text48SPBlack">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>
+

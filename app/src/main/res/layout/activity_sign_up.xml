@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="153dp"
+        app:srcCompat="@drawable/app_logo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/text24Sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/signUpNoU" />
+
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="463dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="146dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txName"
+            style="@style/textSize18ColorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/ipTxName"
+            style="@style/textSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="example"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/txEmail"
+            style="@style/textSize18ColorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/ipTxEmail"
+            style="@style/textSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="example123@gmail.com"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/txGender"
+            style="@style/textSize18ColorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/gender" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="0dp"
+            android:paddingLeft="0dp"/>
+
+        <TextView
+            android:id="@+id/txPhoneNumber"
+            style="@style/textSize18ColorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/phoneNumber" />
+
+        <EditText
+            android:id="@+id/ipTxPhoneNumber"
+            style="@style/textSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="012345789"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/txPassword"
+            style="@style/textSize18ColorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/password" />
+
+
+        <EditText
+            android:id="@+id/ipTxPassword"
+            style="@style/textSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="********"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/txConPassword"
+            style="@style/textSize18ColorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/confrimPassword" />
+
+
+        <EditText
+            android:id="@+id/ipTxConPassword"
+            style="@style/textSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="********"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/radious_green"
+        android:text="@string/signUpNoU"
+        android:textColor="#fff" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HOCH</string>
+    <string name="category">Category : </string>
+    <string name="recommend">Recommend : </string>
+    <string name="khmerFood">Khmer Food</string>
+    <string name="chineseFood">Chinese Food</string>
+    <string name="europeFood">Europe Food</string>
+    <string name="drink">Drink</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confrimPassword">Confirm Password</string>
+    <string name="donnothaveaccount">Don\'t you have an account?</string>
+    <string name="singUp"><u>Sign Up</u></string>
+    <string name="signUpNoU">Sign Up</string>
+    <string-array name="genderForSelect">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+</resources>
