@@ -15,6 +15,6 @@ public class OrderInput extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar2);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
-        toolbar.setLogo(R.drawable.ic_arrow_back_black_24dp);
+
     }
 }

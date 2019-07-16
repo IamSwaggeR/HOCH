@@ -35,6 +35,12 @@
     <style name="text24Sp" parent="text48SPBlack">
         <item name="android:textSize">24sp</item>
     </style>
+    <style name="marginTop15dp" parent="textSize18ColorBlack">
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+    <style name="text30SP" parent="textSize18ColorBlack">
+        <item name="android:textSize">30sp</item>
+    </style>
 
 </resources>
 

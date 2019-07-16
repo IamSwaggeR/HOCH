@@ -21,4 +21,14 @@
         <item>Female</item>
         <item>Other</item>
     </string-array>
+    <string name="order">Order</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="seatN">Seat Nº</string>
+    <string name="comment">Comment : </string>
+    <string name="orderNow">Order Now</string>
+    <string name="detail">Detail</string>
+    <string name="size">Size</string>
+    <string name="smallDish">Small Dish</string>
+    <string name="bigDish">Big Dish</string>
 </resources>
