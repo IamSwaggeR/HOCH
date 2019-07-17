@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Food_detail">
+    tools:context=".Food_Detail">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
         android:text="@string/detail" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/backArrowDetailHomePage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/toolbar3"
@@ -42,11 +42,11 @@
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="634dp"
+        android:layout_height="674dp"
+        android:layout_below="@+id/toolbar3"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="1dp"
-        android:layout_below="@+id/toolbar3">
-
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="1dp">
     </FrameLayout>
 
 </RelativeLayout>
