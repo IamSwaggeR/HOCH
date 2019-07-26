@@ -7,7 +7,7 @@
     <string name="europeFood">Europe Food</string>
     <string name="drink">Drink</string>
     <string name="login">Login</string>
-    <string name="name">Name</string>
+    <string name="name">Username</string>
     <string name="email">Email</string>
     <string name="gender">Gender</string>
     <string name="phoneNumber">Phone Number</string>
@@ -35,4 +35,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="orderList">Order List</string>
+    <string name="fried">Fried</string>
+    <string name="soup">Soup</string>
+    <string name="dessert">Dessert</string>
+    <string name="ok">:</string>
+    <string name="done">Done</string>
+    <string name="orderSuccess">Order Successfully</string>
+    <string name="pref_file">com.example.preference_file</string>
+    <string name="pref_login_status">com.example.preference_login_status</string>
+    <string name="pref_user_name">com.example.preference_user_name</string>
+    <string name="example">Example</string>
 </resources>

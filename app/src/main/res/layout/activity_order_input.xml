@@ -7,7 +7,7 @@
     tools:context=".OrderInput">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
+        android:id="@+id/toolbarOrder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -23,28 +23,17 @@
         style="@style/textHomePage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/toolbar2"
+        android:layout_alignTop="@+id/toolbarOrder"
         android:layout_centerInParent="true"
         android:layout_marginTop="11dp"
         android:text="@string/order" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/toolbar2"
-        android:layout_alignTop="@+id/toolbar2"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="152dp"
-        android:background="@null"
-        app:srcCompat="@drawable/ic_back" />
 
     <LinearLayout
         android:id="@+id/linerLayout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar2"
+        android:layout_below="@id/toolbarOrder"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="-1dp"
         android:layout_marginBottom="0dp"
@@ -59,7 +48,7 @@
             style="@style/marginTop15dp"/>
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/border"
@@ -76,11 +65,27 @@
             style="@style/marginTop15dp"/>
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="time"
+            android:background="@drawable/border"
+            style="@style/marginTop15dp"
+            android:hint="" />
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phoneNumber"
+            style="@style/marginTop15dp"/>
+
+        <EditText
+            android:id="@+id/phoneNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
             android:background="@drawable/border"
             style="@style/marginTop15dp"
             android:hint="" />
@@ -120,7 +125,7 @@
                 android:layout_marginTop="15dp"
                 android:id="@+id/editText8"
                 android:layout_width="wrap_content"
-                android:layout_height="200dp"
+                android:layout_height="100dp"
                 android:background="@drawable/border"
                 android:layout_weight="1"
                 android:ems="10"
@@ -131,7 +136,7 @@
 
         <Button
             android:layout_marginTop="15dp"
-            android:id="@+id/button2"
+            android:id="@+id/btnOrderNow"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

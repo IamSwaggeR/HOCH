@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarKhmerFoodList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBule"
+        android:gravity="center_horizontal"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/textViewKhmerFood"
+        style="@style/textHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toolbarKhmerFoodList"
+        android:layout_alignEnd="@+id/imageButtonKHShopping"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/khmerFood" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_search" />
+
+    <ImageButton
+        android:id="@+id/imageButtonKHShopping"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_shopping_cart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_alignTop="@id/toolbarKhmerFoodList"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="518dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBule"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorRed"
+            app:tabTextColor="@color/colorWhite"
+            app:tabMode="fixed">
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_khmer_food_container"
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        android:layout_below="@+id/toolbarKhmerFoodList"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="0dp" />
+
+
+</RelativeLayout>

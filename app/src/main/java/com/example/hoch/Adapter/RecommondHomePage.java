@@ -1,9 +1,10 @@
 package com.example.hoch.Adapter;
 
 public class RecommondHomePage {
-    private String titile,image;
+    private String titile;
+    private int image;
 
-    public RecommondHomePage(String titile, String image) {
+    public RecommondHomePage(String titile, int image) {
         this.titile = titile;
         this.image = image;
     }
@@ -16,11 +17,11 @@ public class RecommondHomePage {
         this.titile = titile;
     }
 
-    public String getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(int image) {
         this.image = image;
     }
 }
